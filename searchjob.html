@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching</title>
+    <style>
+        body{
+            background-color:#359381;
+            
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            z-index:10;
+        }
+        a,button {
+            background-color:#359381;
+            color: #fff;
+            border:none;
+            font-size:20px;
+            font-weight:bold;
+            text-decoration: none;
+            padding: 10px;
+            cursor:pointer;
+}
+        .s{
+            width:20%;
+            padding:10px;
+            margin:15px;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(255, 0, 0, 0.6), 0 6px 20px rgba(0,255,200,0.5);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+}
+        .outer{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+
+        input{
+            width:90%;
+            padding:10px;
+            margin:15px;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(255, 0, 0, 0.6), 0 6px 20px rgba(0,255,200,0.5);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            
+            <input type="text" placeholder="Search jobs"/>
+            <div class="outer">
+            <div class="s">
+                <button type="submit" >Submit</button>
+            </div>         
+            
+        </form>
+    </div>
+
+    <div class="menu">
+        <a href="home.html" class="menu-item">Back to Menu</a>
+    </div>
+</body>
+</body>
+</html>

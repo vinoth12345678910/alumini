@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <img src="pixel.png" class="logo">
+        <nav class="navigation">
+            <a href="home.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="alumini.html">Signup</a>
+        </nav>
+    </header>
+    <section class="parallax">
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <h2 id="text">ALUMINI CONNECT.</h2>
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="plant">
+    </section>
+    <section class="sec">
+ 
+        <p>In today's professional landscape,
+            alumni connection platform play a
+            crucial role in enhancing
+            engagement. This platform
+            facilitate networking, mentorship,
+            and collaboration among former
+            students, fostering a sense of
+            community that extends beyond
+            graduation!<br>
+            In addition to fostering connections, alumni platforms provide a valuable resource for professional development. Alumni can share job opportunities, industry insights, and best practices, helping each other navigate their career paths more effectively. These platforms often feature events, webinars, and exclusive content tailored to the needs of alumni, keeping them informed about the latest trends and innovations in their fields.
+
+Moreover, alumni platforms serve as a bridge between current students and graduates, offering mentorship programs that guide students in their academic and career journeys. By leveraging the expertise and experiences of alumni, students gain invaluable insights into real-world challenges and opportunities, better preparing them for their future careers. 
+
+This continuous cycle of engagement not only strengthens the alumni network but also enhances the reputation and reach of the institution, making it a powerful asset for everyone involved.</p>
+           </section>
+    <script>
+        let text = document.getElementById("text");
+        let leaf = document.getElementById("leaf");
+        let hill1 = document.getElementById("hill1");
+        let hill4 = document.getElementById("hill4");
+        let hill5 = document.getElementById("hill5");
+        window.addEventListener('scroll',()=>{
+            let value = window.scrollY;
+            text.style.marginTop = value*2.5+'px';
+            leaf.style.top = value*-1.5+'px';
+            leaf.style.left = value*1.5+'px';
+            hill5.style.left = value*1.5+'px';
+        })
+    </script>
+</body>
+
+
+</html>

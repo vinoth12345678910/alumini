@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Left Menu with Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #359381;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #359381; /* Semi-transparent background */
+            z-index: 15; /* Ensures the nav bar is on top */
+            padding: 10px 0;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-size: 1.2em; /* Font size for better visibility */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 0 15px;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            background-color: #47b49b; /* Hover color */
+        }
+
+        .parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .parallax img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .menu {
+            position: absolute;
+            top: 100px; /* Push down the menu from the top */
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            z-index: 10; /* Above the images */
+        }
+
+        .menu-item {
+            display: block;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background-color: #47b49b;
+        }
+        .logo{
+            width:100px;
+            height:70px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navigation">
+        <img src="pixel.png" class="logo">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <section class="parallax">
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="plant">
+    </section>
+
+    <div class="menu">
+        <a href="networking.html" class="menu-item" data-target="networking">Networking</a>
+        <a href="mentor.html" class="menu-item" data-target="mentorship">Mentorship</a>
+        <a href="resiurce.html" class="menu-item" data-target="resources">Access to Resources</a>
+        <a href="searchjob.html" class="menu-item" data-target="others">Search Jobs</a>
+    </div>
+
+ 
+</body>
+</html>

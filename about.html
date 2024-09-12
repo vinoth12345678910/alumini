@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            background-color: #359381;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            z-index: 10; /* Ensures the container is above the images */
+            margin: 70px auto;
+            border-radius: 20px;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.5); 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            margin-top: 30px;
+            text-align: justify;
+            line-height: 1.6;
+            color: black;
+        }
+        b {
+            color: antiquewhite;
+        }
+        .parallax img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1; /* Images will be in the background */
+        }
+        .parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 5; /* Just below the container */
+            overflow: hidden;
+        }
+        header {
+            position: fixed; /* Fixed to the top of the viewport */
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom:20px;
+            z-index: 100; /* Ensures it stays above everything */
+            background-color: #359381; /* Optional: to give a slight background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+        }
+        .logo {
+            width:100px;
+            height:100px;
+        }
+        .navigation a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 0 20px;
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="pixel.png" class="logo">
+        <nav class="navigation">
+            <a href="home.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="alumini.html">Signup</a>
+        </nav>
+    </header>
+    <section class="parallax">
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="plant">
+    </section>
+    <div class="container">
+        <h1>About our website</h1>
+        
+        <p><b>About Pixel Pilots</b>
+
+            Welcome to Pixel Pilots, the official alumni networking platform of your college or university. We believe that the bonds forged during college don't have to end with graduation. Our mission is to create a thriving, connected community of past and present students, where experiences are shared, opportunities are created, and lifelong friendships are nurtured.
+            </p>
+        <p>
+            <b>Who We Are</b>
+            
+            Pixel Pilots is a passionate team of students and alumni from SRM RMP, united by a common goal: to bridge the gap between the generations of students who have walked through our college's halls. With a blend of creativity, technology, and a deep understanding of what it means to be part of this unique community, we’ve crafted a platform that’s as dynamic and diverse as our alumni.</p>
+        <p>
+            <b>What We Do</b>
+            
+            Our platform is designed to offer alumni a space to reconnect, collaborate, and grow. Whether you're looking to catch up with old friends, network with professionals in your field, mentor current students, or find new career opportunities, Pixel Pilots is here to make it happen.</p>
+        <p>
+            -  Reconnect: Search for and reconnect with classmates and faculty members.</p>
+        <p>-  Network: Explore professional opportunities and build connections with alumni working in various industries.</p>
+        <p>-  Mentorship: Give back by mentoring current students or seeking guidance from experienced alumni.</p>
+        <p>-  Events:  Stay informed about upcoming events.</p>
+        <p><b>Our Vision</b>
+
+            We envision a world where our alumni network transcends the limitations of time and geography, fostering a culture of collaboration, learning, and mutual support. Pixel Pilots is committed to making this vision a reality, ensuring that the spirit of your college or university lives on long after graduation.
+            </p>
+            <p>
+            <b>Join Us</b>
+
+            Whether you’re a recent graduate or a seasoned professional, Pixel Pilots offers you a chance to stay connected with your college community. <b>Join us today and be a part of something greater—a network that grows with you, every step of the way.</b>
+            </p>
+        <b>Please click on this to redirect to <a href="#">Home</a></b>
+    </div>
+ 
+</body>
+</html>
+
